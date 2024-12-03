@@ -26,22 +26,14 @@ body {
 }
 
 @font-face {
-    font-family: "Redzone";
+    font-family: 'Courier New', Courier, monospace;
     src: url("/fonts/VTFRedzone-Classic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Nominee";
+    font-family: 'Courier New', Courier, monospace;
     src: url("/fonts/Nominee-Medium.ttf") format("truetype");
 }
-
-/* .font-redzone {
-    font-family: "Redzone";
-}
-
-.font-nominee {
-    font-family: "Nominee";
-} */
 
 @layer {
     .col {
@@ -96,7 +88,7 @@ button {
 
 /* Global styling for Markdown content */
 .markdown-content {
-    font-family: 'Nominee', sans-serif;
+    font-family:'Courier New', Courier, monospace;
     line-height: 1.6;
     color: #333;
   }
