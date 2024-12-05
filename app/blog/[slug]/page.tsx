@@ -9,7 +9,7 @@ type BlogContent = {
   content: string; // This will store the processed HTML
 };
 
-interface BlogPostProps {
+type BlogPostProps = {
   slug: string;
 }
 
@@ -45,9 +45,6 @@ export default function BlogPost({ slug }: BlogPostProps) {
 
   if (error) return <div>Error: {error}</div>;
   if (!blogContent) return <div>Loading...</div>;
-
-  const { data, content } = blogContent;
-  console.log(blogContent.content);
 
   return (
     <div className="overflow-y-auto h-full">
