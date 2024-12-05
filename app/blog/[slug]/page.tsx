@@ -9,11 +9,8 @@ type BlogContent = {
   content: string; // This will store the processed HTML
 };
 
-type BlogPostProps = {
-  slug: string;
-}
 
-export default function BlogPost({ slug }: BlogPostProps) {
+export default function BlogPost({ slug }: { slug: string }) {
   const [blogContent, setBlogContent] = useState<BlogContent | null>(null);
   const [error, setError] = useState<string | null>(null);
 
