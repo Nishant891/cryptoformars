@@ -15,6 +15,6 @@ export const getBlogMetadata = () => {
     const filePath = path.join(process.cwd(), "content", file);
     const fileContent = fs.readFileSync(filePath, "utf8");
     const { data } = matter(fileContent); // Extract frontmatter only
-    return { ...data, slug: file.replace(/\.md$/, "") };
+    return { ...data, slug: file.replace(/\.md$/, "")};
   });
 };

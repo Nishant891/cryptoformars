@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import remarkHtml from "remark-html";
 import remarkParse from "remark-parse";
@@ -30,7 +30,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
         // Process the Markdown content and convert it to HTML using unified
         const file = await unified()
           .use(remarkParse) // Parse the Markdown
-          .use(remarkHtml)  // Convert Markdown to HTML
+          .use(remarkHtml) // Convert Markdown to HTML
           .process(data.content);
 
         // Set the HTML content in the state
@@ -47,13 +47,14 @@ export default function BlogPost({ slug }: BlogPostProps) {
   if (!blogContent) return <div>Loading...</div>;
 
   const { data, content } = blogContent;
-  console.log(blogContent.content)
+  console.log(blogContent.content);
 
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <div className="markdown-content" dangerouslySetInnerHTML={{ __html: blogContent.content }} />
+    <div className="overflow-y-auto h-full">
+      <div
+        className="markdown-content mx-12"
+        dangerouslySetInnerHTML={{ __html: blogContent.content }}
+      />
     </div>
   );
-  
 }
