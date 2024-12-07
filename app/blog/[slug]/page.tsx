@@ -10,7 +10,7 @@ type BlogContent = {
 };
 
 
-export default function BlogPost({ slug }: { slug: string }) {
+export default function BlogPost({ slug }: any) {
   const [blogContent, setBlogContent] = useState<BlogContent | null>(null);
   const [error, setError] = useState<string | null>(null);
 
