@@ -44,7 +44,7 @@ export default function BlogPost({ slug }: any) {
   return (
     <div className="overflow-y-auto h-full">
       <div
-        className="markdown-content mx-12"
+        className="markdown-content ml-20 mr-6 lg:mx-12"
         dangerouslySetInnerHTML={{ __html: blogContent.content }}
       />
     </div>

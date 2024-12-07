@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --main-font: "Nominee";
+    --main-font: "Roboto";
     --main-text: #fff;
     scroll-behavior: smooth;
 }
@@ -26,12 +26,12 @@ body {
 }
 
 @font-face {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Roboto", sans-serif;
     src: url("/fonts/VTFRedzone-Classic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Roboto", sans-serif;
     src: url("/fonts/Nominee-Medium.ttf") format("truetype");
 }
 
@@ -88,7 +88,7 @@ button {
 
 /* Global styling for Markdown content */
 .markdown-content {
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     color: #333;
   }
@@ -172,7 +172,7 @@ button {
     overflow-x: auto;
     word-wrap: break-word;
     font-size: 0.95rem;
-    font-family: 'Courier New', monospace;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 1rem;
   }
   
@@ -182,7 +182,7 @@ button {
     padding: 3px 5px;
     border-radius: 3px;
     font-size: 0.95rem;
-    font-family: 'Courier New', monospace;
+    font-family: "Roboto", sans-serif;
   }
   
   /* Tables */

@@ -18,7 +18,7 @@ export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
   return (
     <div className="flex h-screen">
       <Sidebar blogs={blogs} />
-        <BlogPost slug={slug} />
+      <BlogPost slug={slug} />
     </div>
   );
 }
