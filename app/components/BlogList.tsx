@@ -1,6 +1,7 @@
 "use client";
+
 import { useSearchParams } from "next/navigation";
-import BlogPost from "../blog/[slug]/page";
+import BlogPost from "@/app/blog/[slug]/page";
 import Sidebar from "./Sidebar";
 
 type BlogMetadata = {
@@ -16,8 +17,8 @@ export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
 
   return (
     <div className="flex h-screen">
-      <Sidebar blogs={blogs}/>
-      <BlogPost slug={slug} />
+      <Sidebar blogs={blogs} />
+        <BlogPost slug={slug} />
     </div>
   );
 }

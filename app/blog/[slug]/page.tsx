@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import remarkHtml from "remark-html";
 import remarkParse from "remark-parse";
@@ -6,9 +7,8 @@ import { unified } from "unified";
 
 type BlogContent = {
   data: { title: string };
-  content: string; // This will store the processed HTML
+  content: string;
 };
-
 
 export default function BlogPost({ slug }: any) {
   const [blogContent, setBlogContent] = useState<BlogContent | null>(null);
@@ -24,13 +24,11 @@ export default function BlogPost({ slug }: any) {
         }
 
         const data = await response.json();
-        // Process the Markdown content and convert it to HTML using unified
         const file = await unified()
-          .use(remarkParse) // Parse the Markdown
-          .use(remarkHtml) // Convert Markdown to HTML
+          .use(remarkParse)
+          .use(remarkHtml)
           .process(data.content);
 
-        // Set the HTML content in the state
         setBlogContent({ data: data.data, content: String(file) });
       } catch (err) {
         setError(err instanceof Error ? err.message : "Unknown error");
