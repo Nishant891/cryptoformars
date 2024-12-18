@@ -4,17 +4,17 @@ const cards = [
     {
         id: 1,
         title: "Fueling the Metaverse",
-        desc: "The Metaverse is the next generation of the internet. As of its earliest explorers, You will help fuel its expansion",
+        desc: "The Metaverse is the next evolution of the internet, and you’re among its earliest pioneers. Together, we’ll drive its growth and unlock limitless possibilities.",
     },
     {
         id: 2,
         title: "Initial Metaverse Offering",
-        desc: "The Metaverse is the next generation of the internet. As of its earliest explorers, You will help fuel its expansion",
+        desc: "Be part of the groundbreaking phase of the Metaverse. As an early explorer, you’ll play a key role in shaping its foundation and fueling its expansion.",
     },
     {
         id: 3,
         title: "Incubation",
-        desc: "The Metaverse is the next generation of the internet. As of its earliest explorers, You will help fuel its expansion",
+        desc: "The Metaverse is in its infancy, and we’re here to nurture its growth. Join us as we develop innovative solutions to power this transformative digital frontier.",
     },
 ];
 

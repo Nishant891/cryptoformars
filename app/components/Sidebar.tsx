@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useState } from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { BiLeftArrowAlt } from "react-icons/bi";
+import AppLogo from "./sub-components/AppLogo";
 
 type BlogMetadata = {
   slug: string;
@@ -41,7 +42,10 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
           })}
         >
           {!isSidebarVisible && (
-            <span className="whitespace-nowrap">My Logo</span>
+            <span className="whitespace-nowrap"><AppLogo
+            onClick={() => window.location.assign("/")}
+            className="cursor-pointer"
+          /></span>
           )}
           <button
             className="grid place-content-center hover:bg-indigo-800 w-10 h-10 rounded-full opacity-100"

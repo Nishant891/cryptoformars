@@ -12,8 +12,7 @@ export default function PromoSection() {
             <article className="col gap-6 items-start justify-center h-[inherit] md:max-w-[40%] m-2 lg:-translate-y-10">
                 <h4 className="font-redzone text-6xl">Join Us now</h4>
                 <span className="text-gray-200">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo
-                    eaque fugiat pariatur error!
+                Become part of an innovative community shaping the future of digital assets. Connect, create, and thrive in the exciting world of blockchain and NFTs. 🚀
                 </span>
                 <Button outline>Join Tournament</Button>
             </article>

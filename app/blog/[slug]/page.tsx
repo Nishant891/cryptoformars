@@ -39,7 +39,10 @@ export default function BlogPost({ slug }: any) {
   }, [slug]);
 
   if (error) return <div>Error: {error}</div>;
-  if (!blogContent) return <div>Loading...</div>;
+  if (!blogContent)
+    return (
+      null
+    );
 
   return (
     <div className="overflow-y-auto h-full">

@@ -3,8 +3,8 @@ import { SectionProps } from "../types";
 const tags = [
     "Wide range of platforms",
     "World class artists",
-    "Any type of assets",
-    "Fast payments",
+    "Passionate coders",
+    "Knowlegable researchers",
 ];
 
 export default function AboutSection() {
@@ -14,12 +14,11 @@ export default function AboutSection() {
                 <Heading
                     className="max-w-[90%]"
                     heading="About Us"
-                    subHeading="Discover more Collect And Sell Rare NFTs"
+                    subHeading="Learn more Collect And Sell Rare NFTs"
                 />
                 <span className="text-app_gray/80 leading-8 text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum
-                    praesentium? Numquam officiis totam consequuntur dignissimos alias,
-                    quae autem!
+                We’re a group of passionate students building the future of blockchain from our dorm rooms. Driven by innovation and a desire to make a difference, we aim to create secure, accessible, and impactful solutions that redefine how the world connects and collaborates.
+                Join us as we revolutionize the blockchain space, one idea at a time.
                 </span>
                 <div className="row gap-2">
                     {tags.map((tag, i) => (
