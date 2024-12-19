@@ -15,8 +15,16 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const Icon = isSidebarVisible ? BiRightArrowAlt : BiLeftArrowAlt;
   const handleBlogClick = (slug: string) => {
-    router.push(`/blog?slug=${slug}`, undefined);
+    const transformedSlug = slug.replace(/ /g, '_');
+    router.push(`/blog?slug=${transformedSlug}`, undefined);
   };
+  const Blogs = blogs.map((blog) => {
+    return {
+      slug: blog.slug
+        .replace(/_/g, ' ')
+        .replace(/\b\w/g, char => char.toUpperCase())
+    };
+  })
   return (
     <div
       className={classNames({
@@ -60,7 +68,7 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
               "my-2 flex flex-col gap-2 items-stretch": true,
             })}
           >
-            {blogs.map((blog) => (
+            {Blogs.map((blog) => (
               <li
                 key={blog.slug}
                 onClick={() => handleBlogClick(blog.slug)}
