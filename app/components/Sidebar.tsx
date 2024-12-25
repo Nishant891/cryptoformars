@@ -15,16 +15,17 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const Icon = isSidebarVisible ? BiRightArrowAlt : BiLeftArrowAlt;
   const handleBlogClick = (slug: string) => {
-    const transformedSlug = slug.replace(/ /g, '_');
-    router.push(`/blog?slug=${transformedSlug}`, undefined);
+    //const transformedSlug = slug.replace(/ /g, '_');
+    //console.log(transformedSlug);
+    router.push(`/blog?slug=${slug}`, undefined);
   };
-  const Blogs = blogs.map((blog) => {
+  /*const Blogs = blogs.map((blog) => {
     return {
       slug: blog.slug
         .replace(/_/g, ' ')
         .replace(/\b\w/g, char => char.toUpperCase())
     };
-  })
+  })*/
   return (
     <div
       className={classNames({
@@ -50,10 +51,12 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
           })}
         >
           {!isSidebarVisible && (
-            <span className="whitespace-nowrap"><AppLogo
-            onClick={() => window.location.assign("/")}
-            className="cursor-pointer"
-          /></span>
+            <span className="whitespace-nowrap">
+              <AppLogo
+                onClick={() => window.location.assign("/")}
+                className="cursor-pointer"
+              />
+            </span>
           )}
           <button
             className="grid place-content-center hover:bg-indigo-800 w-10 h-10 rounded-full opacity-100"
@@ -68,7 +71,7 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
               "my-2 flex flex-col gap-2 items-stretch": true,
             })}
           >
-            {Blogs.map((blog) => (
+            {blogs.map((blog) => (
               <li
                 key={blog.slug}
                 onClick={() => handleBlogClick(blog.slug)}
@@ -79,7 +82,15 @@ const Sidebar = ({ blogs }: { blogs: BlogMetadata[] }) => {
                   "rounded-full p-2 mx-3 w-10 h-10": isSidebarVisible,
                 })}
               >
-                <span className="cursor-pointer">{!isSidebarVisible && blog.slug}</span>
+                <span className="cursor-pointer">
+                  {!isSidebarVisible &&
+                    blog.slug
+                      .split("_")
+                      .map(
+                        (word) => word.charAt(0).toUpperCase() + word.slice(1)
+                      )
+                      .join(" ")}
+                </span>
               </li>
             ))}
           </ul>
