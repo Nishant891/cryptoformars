@@ -1,6 +1,7 @@
-# How I cracked an internship at Nutanix during my 3rd year 
+# How I Cracked An Internship At Nutanix During My 3rd Year 
 
-Nutanix visited Techno India in July this year to recruit interns for the role of Software Reliability Engineer (SRE). I as an student of Siliguri Institute of Technology participated in the drive. I was fortunate to be one of the five students shortlisted for this opportunity. In this blog, I’ll share my experience to help others prepare for similar roles.
+Nutanix visited Techno India in July this year to recruit interns for the role of Software Reliability Engineer (SRE). Representing Siliguri Institute of Technology, I participated in this recruitment drive. I was fortunate to be one of the five students shortlisted for this opportunity. In this blog, I’ll share my experience to help others prepare for similar roles.
+
 
 The selection process consisted of four rigorous rounds, focusing on the following topics:
 
@@ -14,11 +15,9 @@ This is a non-coding job profile, so DSA questions were not asked.
 
 ---
 
-## Round 1: MCQ Test
+## Round 1: MCQ Test on Hackerrank
 
-- **Platform**: Hackerrank
-- **Duration**: 60 minutes
-- **Questions**: 50 (MCQs)
+We had 60 mins to answer 50 questions.
 
 The questions primarily covered:
 - Networking
@@ -35,7 +34,7 @@ The questions primarily covered:
 **Important Detail:**
 - Questions often had multiple correct answers, so attention to detail was crucial.
 
-> **Preparation Tips**: For preparation, I recommend referring to resources like [Sanfoundry](https://www.sanfoundry.com/) and [InterviewBit](https://www.interviewbit.com/).
+> **Preparation Tips**: For preparation, I recommend referring to resources like [Sanfoundry](https://www.sanfoundry.com/) and [InterviewBit](https://www.interviewbit.com/).You can learn and practice questions in these sites.
 
 **Outcome**: Out of 450 students, around 80 were shortlisted for the second round.
 
@@ -50,13 +49,15 @@ This round delved deep into Linux, Operating Systems, and Computer Networks. Her
 - Are you not interested in development?
 - Explain the Linux booting process.
 - Common Linux commands: `top`, `traceroute`, `ping`, `ifconfig`, `df`, `ssh`, `netstat`, `nslookup` (know their full forms and purposes).
-- Deep dive into DNS and DNS records.
+- Questions on DNS and DNS records.
 - OSI model layers and associated protocols.
-- Various protocols with their port numbers and uses.
+- Various protocols with their port numbers and uses for instance FTP, SSH, DNS. Also learn about number of available ports and their types
 - Questions on IPv4, IPv6, and MAC addresses.
 - HDD and SSD
 
 > **Preparation Tips**: Focus on learning about Linux commands that are used for troubleshooting. 
+
+**Outcome**: Out of 80 students, around 20 were shortlisted for the second round.
 
 ---
 
@@ -83,6 +84,8 @@ This round involved scenario-based and diagram-based questions. The diagram-base
 - How would you build a computer from scratch, and what hardware/software components would you use? What are the differences between CPU and GPU?
 
 > **Preparation Tip**: Check out [PowerCert Animated Videos](https://www.youtube.com/c/PowerCertAnimatedVideos) for visual learning on these topics.
+
+**Outcome**: Out of 20 students, around 8 were shortlisted for the second round.
 
 ---
 
