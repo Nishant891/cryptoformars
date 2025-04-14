@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "CryptoForMars",
@@ -26,7 +27,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics/>
+      </body>
     </html>
   );
 }
